@@ -1,13 +1,11 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
   Outlet
 } from "react-router-dom";
 import Home from './pages/home/Home';
 import User from './pages/users/User';
-import Product from './pages/products/product';
+import Product from './pages/products/Product';
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
