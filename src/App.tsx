@@ -20,8 +20,9 @@ function App() {
           <div className="menuContainer">
             <Menu />
           </div>
-          <div className="contentContainer"></div>
-          <Outlet />
+          <div className="contentContainer">
+            <Outlet />
+          </div>
         </div>
         <Footer />
       </div>
