@@ -1,6 +1,9 @@
+import BarChartBox from "../../components/barChartBox/BarChartBox";
+import BigChartBox from "../../components/bigChartBox/BigChartBox";
 import ChartBox from "../../components/chartBox/ChartBox";
+import PieChartBox from "../../components/pieChartBox/PieChartBox";
 import TopBox from "../../components/topBox/TopBox";
-import { chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser } from "../../data";
+import { barChartBoxRevenue, barChartBoxVisit, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser, data, dataBigChart } from "../../data";
 import "./home.scss";
 
 const Home = () => {
@@ -10,31 +13,30 @@ const Home = () => {
                 <TopBox />
             </div>
             <div className="box box-2">
-                <ChartBox {...chartBoxUser} />
+                <ChartBox dataChart={chartBoxUser} />
             </div>
             <div className="box box-3">
-                <ChartBox {...chartBoxProduct} />
+                <ChartBox dataChart={chartBoxProduct} />
 
             </div>
             <div className="box box-4">
-                <ChartBox {...chartBoxConversion} />
-
+                <PieChartBox pieChartdata={data} />
             </div>
             <div className="box box-5">
-                <ChartBox {...chartBoxRevenue} />
-
+                <ChartBox dataChart={chartBoxConversion} />
             </div>
             <div className="box box-6">
-                Box6
+                <ChartBox dataChart={chartBoxRevenue} />
+
             </div>
             <div className="box box-7">
-                Box7
+                <BigChartBox data={dataBigChart} />
             </div>
             <div className="box box-8">
-                Box8
+                <BarChartBox barChartdata={barChartBoxVisit} />
             </div>
             <div className="box box-9">
-                Box9
+                <BarChartBox barChartdata={barChartBoxRevenue} />
             </div>
             <div className="box box-10">
                 Box10
