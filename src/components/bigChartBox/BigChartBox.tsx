@@ -7,10 +7,7 @@ interface propsData {
     clothes: number,
     electronic: number
 }
-interface dataChart {
-    data: propsData[]
-}
-const BigChartBox = ({ data }: dataChart) => {
+const BigChartBox = ({ data }: { data: propsData[] }) => {
     return (
         <div className="big-chart">
             <h1>Revenue Analytics</h1>

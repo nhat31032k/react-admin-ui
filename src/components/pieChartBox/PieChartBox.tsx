@@ -6,10 +6,7 @@ interface dataProps {
     color: string
 
 }
-interface props {
-    pieChartdata: dataProps[]
-}
-const PieChartBox = ({ pieChartdata }: props) => {
+const PieChartBox = ({ pieChartdata }: { pieChartdata: dataProps[] }) => {
     return (
         <div className="pie-chart">
             <h1>Leads by Source</h1>
